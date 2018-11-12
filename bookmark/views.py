@@ -20,6 +20,7 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Bookmark
 class BookmarkListView(ListView):
     model = Bookmark
+    paginate_by = 3
     # 클래스형 뷰는 기본적으로 렌더링할 템플릿 파일이 지정이 되어 있음
     # bookmark/bookmark_list.html
 
